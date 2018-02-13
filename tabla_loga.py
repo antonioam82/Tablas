@@ -45,7 +45,6 @@ while True:
         nums=ran_val(input(str("Introduzca rango separado por coma: ")))
         nums=[int(nums[0]),int(nums[1])]#PASAMOS LOS ELEMENTOS DE LA LISTA A ENTEROS
         nums.sort() #ORDENAR LOS NÚMEROS DEL RANGO 
-        print(nums)
         for i in range(nums[0],nums[1]+1):
             if B==("e"):
                 print(i, '\t', log(i))
