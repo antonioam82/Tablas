@@ -28,7 +28,7 @@ while True:
     print("¿QUE METODO DESEA?")
     print("A)Metodo \'LISTA\'")
     print("B)Metodo \'RANGO\'")
-    met=AB(input("Introduzaca aquí su opción: "))
+    met=AB(input("Introduzca aquí su opción: "))
     B=op_val(input("Introduzca base: "))
     if met==("A"):
         x=1.0
@@ -43,8 +43,10 @@ while True:
             x=x+1.0 #LO MISMO QUE x+=1.0
     else: #met==("B")
         nums=ran_val(input(str("Introduzca rango separado por coma: ")))
-        nums.sort() #ORDENAR LOS NÚMEROS DEL RANGO
-        for i in range(int(nums[0]),int(nums[1])+1):
+        nums=[int(nums[0]),int(nums[1])]#PASAMOS LOS ELEMENTOS DE LA LISTA A ENTEROS
+        nums.sort() #ORDENAR LOS NÚMEROS DEL RANGO 
+        print(nums)
+        for i in range(nums[0],nums[1]+1):
             if B==("e"):
                 print(i, '\t', log(i))
             else:
