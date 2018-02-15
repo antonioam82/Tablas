@@ -8,10 +8,18 @@ def AB(m):
     return m
 
 def ran_val(n):
-    rang=n.split(",")#SEPARAMOS "nums" MEDIANTE COMA
-    while len(rang)!=2 or(int(rang[0])<1 or int(rang[1])<1):
-        rang=ran_val(input(str("Rango no válido: ")))
-    return rang
+    n=n.split(",")#SEPARAMOS "nums" MEDIANTE COMA
+    while len(n)!=2:#COMPROBAMOS SI SE EFECTUA LA SEPARACION POR COMA
+         n=ran_val(input(str("Asegurese de usar la coma como separador: ")))
+    for i in (n):#COMPROBAMOS SI AMBOS VALORES SON NUMÉRICOS
+        try:
+            con=int(i)
+        except:
+            n=ran_val(input(str("Asegurese de introducir valores numéricos: ")))
+            break
+    while int(n[0])<1 or int(n[1])<1:#COMPROBAMOS SI AMBOS VALORES SON >=1
+        n=ran_val(input(str("Rango no válido: ")))
+    return n
 
 def op_val(b):
     if b!=("e"):
