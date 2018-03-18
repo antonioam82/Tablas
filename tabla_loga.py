@@ -34,8 +34,8 @@ def op_val(b):
 while True:
     print("TABLA DE LOGARITMOS")
     print("¿QUE METODO DESEA?")
-    print("A)Metodo \'LISTA\'")
-    print("B)Metodo \'RANGO\'")
+    print("A)Metodo \'LISTA\'")#PRESENTA LOS RESULTADOS DESDE 1 HASTA EL NÚMERO QUE INDIQUE EL USUARIO.
+    print("B)Metodo \'RANGO\'")#PRESENTA LOS RESULTADOS EN UN RANGO DONDE EL INICIO Y EL FINAL HAN DE SER ESPECIFICADOS POR EL USUARIO.
     met=AB(input("Introduzca aquí su opción: "))
     B=op_val(input("Introduzca base: "))
     if met==("A"):
