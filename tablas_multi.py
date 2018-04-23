@@ -10,8 +10,8 @@ while True:
         print(("%d x %d = %d")%(numero,i,resul))
 
     conti=ns(input("¿Desea continuar?: "))
-    if conti==("n"):
-        break
-    else:
+    if conti==("s"):
         subprocess.call(["cmd.exe","/C","cls"])
+        continue
+    break
 
